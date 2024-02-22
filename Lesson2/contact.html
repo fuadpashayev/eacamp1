@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <!-- <p>
+        Input types: 
+        <div>text</div>
+        <div>number</div>
+        <div>date</div>
+        <div>checkbox</div>
+        <div>radio</div>
+        <div>password</div>
+        <div>file</div>
+        <div>hidden</div>
+    </p> -->
+    <!-- <div>
+      <input type="text" name="first_name" placeholder="Enter first name" />
+      <br />
+      <input type="text" name="last_name" placeholder="Enter last name" />
+      <br />
+      <input type="text" name="data_text" placeholder="text" />
+      <br />
+      <input type="number" name="data_number" placeholder="number" />
+      <br />
+      <input type="date" name="data_date" placeholder="date" />
+      <br />
+      <div>
+          <input id="checkbox1" type="checkbox" name="data_checkbox" />
+          <label for="checkbox1">Checkbox 1</label>
+      </div>
+      <div>
+          <input id="checkbox2" type="checkbox" name="data_checkbox" />
+          <label for="checkbox2">Checkbox 2</label>
+      </div>
+      <br />
+      <div>
+          <input id="option1" type="radio" name="data_radio" />
+          <label for="option1">Option 1</label>
+          <br />
+          <input id="option2" type="radio" name="data_radio" />
+          <label for="option2">Option 2</label>
+          <br />
+          <input id="option3" type="radio" name="data_radio" />
+          <label for="option3">Option 3</label>
+          <br />
+      </div>
+      <br />
+      <input type="password" name="data_password" placeholder="password" />
+      <br />
+      <input type="file" name="data_file" placeholder="file" />
+      <br />
+      <input type="hidden" name="cookie_session" value="test_information" placeholder="hidden" />
+      <br />
+      <input type="search" />
+      <br /> -->
+
+    <form action="https://google.com" method="POST">
+      <h3>Contact Us</h3>
+      <div>
+        <input type="text" name="email" placeholder="Enter your email" />
+      </div>
+      <br />
+      <div>
+        <label for="first_name">First name</label><br />
+        <input
+          id="first_name"
+          type="text"
+          name="first_name"
+          placeholder="Enter your first name"
+        />
+        <br />
+        <label for="last_name">Last name</label><br />
+        <input
+          id="last_name"
+          type="text"
+          name="last_name"
+          placeholder="Enter your last name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="fin">Fin number</label>
+        <input
+          id="fin"
+          type="text"
+          disabled
+          placeholder="Fin number"
+          value="12345"
+        />
+      </div>
+      <div>
+        <input type="number" name="age" placeholder="Enter your age" />
+        <input type="text" name="phone" placeholder="Enter your phone number" />
+      </div>
+
+      <div>
+        <br />
+        <!-- country: 994 -->
+        <select name="country">
+          <option value="non_selected">Select country</option>
+          <option value="994">Azerbaijan</option>
+          <option value="90">Turkiye</option>
+          <option value="993">Georgia</option>
+        </select>
+        <br />
+      </div>
+      <br />
+      <button type="submit">Send request</button>
+      <button type="button">Go to another page</button>
+    </form>
+  </body>
+</html>

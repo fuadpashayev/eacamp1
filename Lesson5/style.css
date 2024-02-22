@@ -1,0 +1,121 @@
+/* .level4>span {
+    color: red;
+}
+
+.level1 span {
+    color: blue;
+} */
+
+/* pseudo selectors */
+
+/* 
+    eyni level-da olan
+    :first-child
+    :last-child
+    :nth-child(2)
+ */
+/* 
+body>div:first-child span {
+    color: yellow;
+}
+
+body>div:last-child span {
+    color: blue;
+}
+
+body>div:nth-child(4) span {
+    color: red;
+}
+
+.level2>span {
+    color: red;
+} */
+/* 
+body>div:first-child>div:nth-child(5) span {
+    color: blue;
+}
+
+body>div:nth-child(1)>div:nth-child(7) span {
+    color: yellow;
+}
+
+body>div:first-child>div:first-child>div:last-child>span:last-child {
+    color: gray;
+}
+
+body>div:first-child>div:first-child>div>span {
+    color: green;
+} */
+
+.bg-red {
+    background-color: red;
+}
+
+.color-red {
+    color: red;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.box {
+    /* calc(): fergli olculeri elde etmek ucun kalkulyator funksiyasi */
+    width: calc(100% - 10px);
+    height: 50px;
+
+    /* margin menfi deyer qebul edir */
+    margin-top: 50px;
+    /* border-radius: 5px; */
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    /* solid | dotted | dashed */
+    border: 1px solid red;
+    border-top: 1px solid blue;
+}
+
+.box2 {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+
+    background-color: red;
+
+    /* arxafon sekli: url() funksiyasi ile */
+    background-image: url(./pictures/picture1.jpg);
+
+    /* arxafon seklinin olcusu */
+    background-size: cover;
+
+    /* arxafon seklinin bosluqlara tekrarlanmasi */
+    background-repeat: no-repeat;
+
+    /* arxafon seklinin pozisiyasi:
+        background-position: x y;
+    */
+    background-position: center;
+
+    /* seklin sabitlenmesi */
+    background-attachment: fixed;
+}
+
+#id:first-child>div:last-child>span:last-child {
+    color: red;
+}
+
+div:first-child>div:last-child>span:last-child {
+    color: red;
+}
+
+style - 1000 id - 100 class - 10 element/pseudo - 1 #id1 #id2 #id3 - 300 .class1 #id1 #id2 - 210 .class1 .class2 .class3 - 30 #id1 element .class2 - 111
+/*
+ Priority
+    1. #id
+    2. .class
+    3. element / pseudo
+*/

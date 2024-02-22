@@ -1,0 +1,230 @@
+/* Reset code */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+.box-style {
+    /* gizletmek ucun */
+    display: none;
+
+    /* gostermek ucun */
+    display: block;
+
+    /* eyni setrde yerlesdirmek ucun */
+    display: inline;
+
+    /* flex layout ucun */
+    display: flex;
+}
+
+.container-style {
+    height: 200px;
+    background: red;
+
+    display: flex;
+}
+
+.container1 {
+    /* layoutun istiqameti */
+
+    /* horizontal */
+    flex-direction: row;
+
+    /* ters row */
+    flex-direction: row-reverse;
+
+    /* vertical */
+    flex-direction: column;
+
+    /* ters vertical */
+    flex-direction: column-reverse;
+
+    /* baslangica yerlesdirmek */
+    justify-content: flex-start;
+
+    /* merkeze yerlesdirmek */
+    justify-content: center;
+
+    /* sona yerlesdirmek */
+    justify-content: flex-end;
+
+    /* sadece aralarina mesafe elave edir */
+    justify-content: space-between;
+
+    /* kenarlarda az mesafe(yari) aralarinda ise daha cox mesafe elave edir */
+    justify-content: space-around;
+
+    /* her terefden eyni mesafe elave edir */
+    justify-content: space-evenly;
+
+
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
+
+}
+
+.container2 {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: #ababab;
+    margin: 1px;
+}
+
+.title {
+    width: 300px;
+    height: 300px;
+    background: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+    eger flex-direction: row
+    justify-content -> horizontal
+    align-items -> vertical
+
+    eger flex-direction: column
+    justify-content -> vertical
+    align-items -> horizontal
+*/
+
+.profile-container-style {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ababab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+    padding-top: 15px;
+
+    /* elementler arasinda mesafe vermek ucun*/
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.profile-container-style img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.profile-container-style span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.container {
+    /* faiz parentin olcusunun faizidi */
+    width: calc(100% - 50px);
+    margin: 10px auto;
+    background-color: cadetblue;
+    border-radius: 3px;
+}
+
+a {
+    color: #fff;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    height: 40px;
+}
+
+.body {
+    padding: 15px 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.title-text {
+    margin-top: 25px;
+}
+
+.news {
+    margin-top: 25px;
+    display: flex;
+
+    /* artiq olan elementleri yeni setre kecirmek ucun */
+    flex-wrap: wrap;
+
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.news-item {
+    width: 120px;
+    background: #fff;
+}
+
+.news-item img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.news-item-body {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-item-body>span {
+    color: #333;
+}
+
+.news-item-body>span:first-child {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.news-item-body>span:last-child {
+    font-size: 14px;
+}
+
+.footer {
+    background: #555;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #ddd;
+}

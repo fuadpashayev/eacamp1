@@ -1,0 +1,157 @@
+#element {
+    /* en */
+    width: 100px;
+
+    /* hundurluk */
+    height: 100px;
+
+    /* arxafon rengi - background color */
+    background-color: #000;
+
+    /* elementin colden mesafesi */
+    margin: 25px;
+
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+
+    /* top:40, right:5, bottom:15, left:2 */
+    margin: 40px 5px 15px 2px;
+
+    /* top: 40, left-right: 10, bottom: 5 */
+    margin: 40px 10px 5px;
+
+    /* top-bottom: 40, left-right: 10 */
+    margin: 35px 10px;
+
+    margin-left: 75px;
+
+
+    /* elementin daxilden mesafesi */
+    padding: 25px;
+
+    /* metni hizalamaq ucun: left, center, right */
+    text-align: center;
+
+    /* yazi rengi - font color */
+    color: #c4810e;
+
+}
+
+.group {
+    background-color: aliceblue;
+    color: red;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.group {
+    color: blue;
+    background-color: #c4810e;
+}
+
+
+/* #box1 {
+    background-color: black;
+    color: white;
+} */
+
+.box {
+    background-color: aqua;
+    color: red;
+}
+
+/* 
+div {
+    background-color: #c4810e;
+    color: blue;
+} */
+
+.profile-box {
+    text-align: center;
+}
+
+.user-name {
+    /* srifti teyin edir */
+    font-family: sans-serif, tahoma, verdana;
+
+    /* yazi olcusunu teyin edir */
+    font-size: 20px;
+
+    /* yazi qalinligini teyin edir */
+    font-weight: bold;
+}
+
+.profile-picture-box {
+    background-color: darkkhaki;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    border-radius: 100%;
+    /* margin: auto - her terefden beraber sekilde olcu verir */
+    margin: 15px auto;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    /* seklin olculerini ferqli olculerde(tiplerde) uygunlasdirmaq */
+    /* 
+        cover: olcuye yerlesen hisseni kesib gosterir
+        contain: seklin oz ratio-sunu qoruyaraq gosterir (16:9)
+
+    */
+    object-fit: cover;
+}
+
+* {
+    color: red;
+    background-color: #c4810e;
+}
+
+
+/* butun elementleri secmek (usag, neve, netice, kotukce) */
+.profile-box div {}
+
+/* child elementleri secmek (usaq) */
+.profile-box>div {}
+
+
+/* .grand-parent img {
+    width: 100px;
+    height: 100px;
+}
+
+.grand-parent>.father>.child>.grand-child>.grand-grand-child>img {
+    width: 350px;
+    height: 350px;
+} */
+
+.grand-parent>div img {
+    width: 100px;
+    height: 100px;
+}
+
+.baba>span>span {
+    color: red;
+}
+
+.baba>.ogul>span {
+    color: blue;
+}
+
+#haha .ogul>span {
+    color: yellow;
+}
+
+
+style - 1000 id - 100 class - 10 element - 1 #id1 #id2 #id3 - 300 .class1 #id1 #id2 - 210 .class1 .class2 .class3 - 30 #id1 element .class2 - 111
+/*
+ Priority
+    1. #id
+    2. .class
+    3. element
+*/
