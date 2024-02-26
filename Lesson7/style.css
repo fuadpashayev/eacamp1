@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center; */
+    /* width: px/%/vw/vh;
+    vw = viewport width
+    vh = viewport height */
+
+}
+
+.box {
+    width: calc(100% / 3 - 6px);
+    height: 50px;
+    border: 1px solid red;
+}
+
+.position-style-comments {
+    /* default deyer */
+    position: static;
+
+    /* static kimi amma individual davranir  */
+    position: relative;
+
+    /* elementi parentin (individual-berkidilmis olan) icinde havaya qaldirir */
+    position: absolute;
+
+    /* sehifeye uygun olaraq sehifeye sabitlenir */
+    position: fixed;
+
+    /* ozune catana qeder hecne, ozunden baslayaraq verilen positiona sabitlenir  */
+    position: sticky;
+
+    /* siblings(baci qardas) arasinda prioritet teyin etme */
+    z-index: 1;
+
+    /* 0-1 arasinda sheffafliq vermek ucun */
+    opacity: 1;
+
+    /* contentin olcusu qeder */
+    width: fit-content;
+
+    /* 
+        auto: hansi istiqametde dashibsa ordaki scrollbar aktiv olur
+        scroll: vertical & horizontal scroll bar aktiv olur ve content scrollable olur
+        visible: artiq qalan hisseni gosterir (default)
+        hidden: artiq qalan hisseni gizledir
+    */
+    overflow: auto;
+
+    /* gorunurluyu  */
+    visibility: hidden;
+
+    /* 
+        kecidleri axici etmek ucun
+        yazilis
+        300ms - micro seconds
+        0.3s - seconds
+        .3s - seconds
+    */
+    transition: 300ms;
+
+
+
+    top: 0;
+    right: 10px;
+    bottom: 50px;
+    left: 40px;
+
+
+}
+
+.visibility {
+    /* display: none; - transition umumiyetle qebul etmir */
+    /* visibility: hidden; - transition qebul edir(animasiyasiz) */
+    /* opacity: 0; - transition qebul edir(animasiyali) */
+}
+
+.overflow {
+    width: 150px;
+    height: 150px;
+    background: yellow;
+}
+
+.overflow div {
+    width: fit-content;
+    height: 40px;
+    background: blue;
+    color: #fff;
+}
+
+.modal-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0009;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.modal {
+    width: 50%;
+    height: 300px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 25%);
+}
+
+.sticky.bg-blue {
+    background-color: blue;
+}
+
+.sticky.bg-red {
+    background-color: red;
+}
+
+.position-box {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.relative {
+    position: relative;
+}
