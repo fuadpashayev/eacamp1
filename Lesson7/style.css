@@ -153,4 +153,24 @@
 
 .relative {
     position: relative;
+    animation: test 3s linear 5;
+}
+
+button:hover {}
+
+a:active {}
+
+input:focus {}
+
+/* 3s */
+@keyframes test {
+    0% {
+        width: 10px;
+    }
+
+    50% {}
+
+    100% {
+        width: 100px;
+    }
 }

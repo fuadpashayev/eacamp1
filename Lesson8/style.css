@@ -1,0 +1,49 @@
+* {
+    /* font-size: 24px; */
+    color: #555;
+}
+
+/* input:focus {
+    background: red;
+} */
+
+/* div:focus {
+    background-color: yellow;
+} */
+
+input {
+    color: red;
+}
+
+.editable-div {
+    margin-top: 20px;
+    border: 1px solid #f00;
+    padding: 5px;
+
+    /* rem - olcu vahidi */
+    /* 1rem - font-size olcusu qederdir */
+}
+
+.contact-form {
+    width: 360px;
+    margin: auto;
+    background-color: #fff;
+    ;
+}
+
+.download-animation {
+    animation: download-animation 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes download-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
