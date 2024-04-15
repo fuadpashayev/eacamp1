@@ -1,5 +1,6 @@
 class Calculator {
   #result = 0;
+
   #yaddas = 0;
 
   constructor(baslangicEded) {
