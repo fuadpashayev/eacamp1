@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+
+    div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0009;
+        color: #fff;
+    }
+}
+
+div:has(#refresh) {
+    text-align: center;
+    margin: 15px 0;
+
+    button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        background: #005bc3;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+
+    }
+}
