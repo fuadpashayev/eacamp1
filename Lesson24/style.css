@@ -1,0 +1,24 @@
+#progress {
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgb(71, 255, 5);
+    position: relative;
+}
+
+#progress div {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+    width: 100%;
+}
+
+#result {
+    width: 100px;
+    border: 1px solid red;
+    height: 300px;
+}
