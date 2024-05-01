@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#messages {
+    padding: 10px;
+    border: 1px solid #ababab;
+    margin-bottom: 10px;
+    height: 70vh;
+    overflow: auto;
+}
+
+.message {
+    background: rgb(255, 106, 0);
+    width: fit-content;
+    padding: 10px 70px;
+    border-radius: 3px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.message-author {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: #0bea13;
+}
+
+.message-text {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.message-delete {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    transition: 330ms;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.message-time {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #ddd;
+}
+
+#message-box {
+    padding: 5px;
+    text-indent: 5px;
+}
+
+#send-message {
+    background: #555;
+    color: #fff;
+    padding: 5px 70px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+}
