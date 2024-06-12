@@ -1,0 +1,39 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.post {
+    width: 230px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postText {
+    padding: 10px;
+
+}
+
+.actionBar {
+    display: flex;
+    text-align: center;
+    border: 1px solid #383838;
+    font-size: 12px;
+    cursor: pointer;
+
+    div {
+        padding: 4px;
+        width: 33.3%;
+        border-right: 1px solid #383838;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
